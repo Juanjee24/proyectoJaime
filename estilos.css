@@ -1,0 +1,54 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    
+
+}
+table{
+    
+}
+td{
+    padding: 2.2rem;
+    border: 2px solid black;
+}
+input[type='button']{
+    padding: 1rem;
+    outline: none;
+    border: 1px solid rgb(199, 199, 199);
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    width: 6%;
+    
+}
+.contenedor_botones{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+#jugador{
+    background-color: purple;
+}
+#salida{
+    background-color: green;
+}
+#examenes{
+    background-color: orange;
+}
+#jaime{
+    background-color: black;
+}
