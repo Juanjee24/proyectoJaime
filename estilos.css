@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    font-family:Har;
 }
 *,
 *::after,
@@ -13,26 +14,48 @@ body{
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    background-image:url("imagenes/fondo.jpg");
     
 
+
 }
-table{
-    
-}
+
 td{
     padding: 2.2rem;
     border: 2px solid black;
+    width: 2rem;
 }
-input[type='button']{
-    padding: 1rem;
-    outline: none;
-    border: 1px solid rgb(199, 199, 199);
-    font-weight: bold;
-    font-size: 1.4rem;
-    margin-left: 1rem;
-    margin-top: 2rem;
-    width: 6%;
+
+
     
+table{
+    background-image: url("imagenes/hogwarts1.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:initial;
+  
+    
+}
+.ganar{
+    background-image: url("imagenes/hogwarts.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+}
+.perder{
+
+    background-image: url("imagenes/hogwartsperdido.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+   
+    
+
+}
+
+td{
+    border: none;
 }
 .contenedor_botones{
     display: flex;
@@ -41,14 +64,160 @@ input[type='button']{
 
 }
 #jugador{
-    background-color: purple;
+    background-image: url("imagenes/garry.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 80%;
+   
+    
+    
+}
+
+.jugadorizq{
+    background-image: url("imagenes/garry.gif");
+    background-size: contain;
+    transform: scaleX(-1);
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.jugadorder{
+        background-image: url("imagenes/garry.gif");
+        transform: scaleX(1);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 80%;
 }
 #salida{
-    background-color: green;
+    background-image: url("imagenes/PUERTACERRADA.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   
 }
-#examenes{
-    background-color: orange;
+
+
+.salidaabierta{
+    background-image: url("imagenes/puertaabierta.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.examenes{
+    background-image: url("imagenes/examenes.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+   
 }
 #jaime{
-    background-color: black;
+    background-image: url("imagenes/severus.gif");
+    background-size: cover;
+    background-size: 100%;
+    transform: scaleX(-1);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+#jaimeizq{
+    
+        background-image: url("imagenes/severus.gif");
+        background-size: cover;
+        background-size: 100%;
+        transform: scaleX(-1);
+        background-repeat: no-repeat;
+        background-position: center;
+    
+}
+audio{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 5;
+}
+
+.invisible{
+    display: none;
+}
+
+
+/* ESTILOS BOTONES */
+
+input[type='button']{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    width: 15%;
+    background-color: #FEEAA5;
+    box-shadow: 3px 3px 4px crimson;
+    transition: all ease-in .2s;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: 'Syne Tactile', cursive;
+    text-transform: uppercase;
+    cursor: pointer;
+
+
+}
+input[type='button']:hover{
+    box-shadow: 5px 5px 5px purple;
+    transform: scale(1.2) rotate(-1deg);
+    background-color: #A75337;
+    color: white;
+    
+}
+
+/*RESPONSIVE */
+
+@media (max-width: 550px) { 
+    td{
+        padding: 0;
+        
+    }
+    table{
+        width: 90%;
+        height: 70vh;
+    }
+    tr{
+        padding: 0;
+    }
+    input[type='button']{
+        width: 50%;
+        transition: all ease-in .1s;
+    }
+    .contenedor_botones{
+        width: 90%;
+    }
+    .contenedor_botones input[type='button']:first-of-type{
+        margin-left: 0;
+    }
+
+    .ganar{
+        background-image: url("imagenes/hogwartsmovil.png");
+    }
+    .perder{
+        background-image: url("imagenes/hogwartsmovilperdido.png");
+    }
+
+
+
+}
+
+#obstaculo{
+    background-image: url("imagenes/NN.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#obstaculo2{
+    background-image: url("imagenes/HAGRID.gif");
+    background-size: 80%;
+    background-repeat: no-repeat;
 }
