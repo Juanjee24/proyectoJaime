@@ -122,33 +122,32 @@ function iniciar() {
 function crearBotones(){
     var  contenedor_botones = document.createElement("div");
     contenedor_botones.className="contenedor_botones";
+    
+    var botonLeft = document.createElement("input");
+    botonLeft.type="button";
+    botonLeft.value="←";
+    botonLeft.setAttribute("onclick","moverIzquierda()");
 
     var botonUP = document.createElement("input");
     botonUP.type="button";
     botonUP.value="↑";
     botonUP.setAttribute("onclick","moverArriba()");
 
-    var botonLeft = document.createElement("input");
-    botonLeft.type="button";
-    botonLeft.value="←";
-    botonLeft.setAttribute("onclick","moverIzquierda()");
-
+    
+    var botonDown = document.createElement("input");
+    botonDown.type="button";
+    botonDown.value="↓";
+    botonDown.onclick=moverAbajo;
 
     var botonRight = document.createElement("input");
     botonRight.type="button";
     botonRight.value="→";
     botonRight.setAttribute("onclick","moverDerecha()");
 
-    var botonDown = document.createElement("input");
-    botonDown.type="button";
-    botonDown.value="↓";
-   
-    botonDown.onclick=moverAbajo;
-
-    contenedor_botones.appendChild(botonUP);
     contenedor_botones.appendChild(botonLeft);
-    contenedor_botones.appendChild(botonRight);
+    contenedor_botones.appendChild(botonUP);
     contenedor_botones.appendChild(botonDown);
+    contenedor_botones.appendChild(botonRight);
 
     document.body.appendChild(contenedor_botones);
 }
@@ -511,7 +510,7 @@ function atraparjaimey(){
 
 
 
-document.onkeydown = teclas;
+document.onkeyup = teclas;
 function teclas(e) {
 
     
