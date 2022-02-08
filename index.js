@@ -12,8 +12,8 @@ var randomJaimex=Math.floor((Math.random()*(6-2+1))+2);
 var randomJaimey=Math.floor((Math.random()*(6-4+1))+4);
 var randomobstaculox=Math.floor((Math.random()*(6-2+1))+2);
 var randomobstaculoy=Math.floor((Math.random()*(6-2+1))+2);
-var randomobstaculo2x=Math.floor((Math.random()*(6-2+1))+2);
-var randomobstaculo2y=Math.floor((Math.random()*(6-2+1))+2);
+var randomobstaculo2x=Math.floor((Math.random()*(5-2+1))+2);
+var randomobstaculo2y=Math.floor((Math.random()*(5-2+1))+2);
 var atrapar=false; 
 var comprobar=false;
 const musicaInicio = new Audio ('audio/corte1menuInicial.mp3');
@@ -42,12 +42,12 @@ do { //no coincida con el jugador ni con salida
 }while(randomJaimex == posicionjugadorx || randomJaimex==salidax || randomJaimex==randomExamenesx );
 
 do { 
-    randomobstaculox=Math.floor((Math.random()*(7-0+1))+0);
+    randomobstaculox=Math.floor((Math.random()*(5-2+1))+2);
 
 }while(randomobstaculox == posicionjugadorx || randomobstaculox==salidax || randomobstaculox==randomExamenesx || randomobstaculox==randomJaimex) ;
 
 do { //no coincida con el jugador ni con salida
-    randomobstaculo2x=Math.floor((Math.random()*(7-0+1))+0);
+    randomobstaculo2x=Math.floor((Math.random()*(5-2+1))+2);
 
 }while(randomobstaculo2x == posicionjugadorx || randomobstaculo2x==salidax || randomobstaculo2x==randomExamenesx || randomobstaculo2x==randomJaimex ||randomobstaculo2x==randomobstaculox) ;
 
